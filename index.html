@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Virtual Library App</h1>
+
+    <div id="newBtn-Container">
+        <button id="newBtn">+New Book</button>
+    </div>
+
+    <div id="popUp">
+        <form name="form" id="form">
+            <span class="close">&times;</span> 
+            <!-- &times is to represent the character 'x' -->
+            <legend>New Book</legend>
+
+            <div id="textInput">
+                <p><input name="title" type="text" id="title" placeholder="Title"></p>
+                <p><input name="author" type="text" id="author" placeholder="Author"></p>
+                <p><input name="pages" type="text" id="pages" placeholder="Pages"></p>
+            </div>
+
+            <div id="checkbox">
+                <p>
+                    <label>Read: </label><input type="checkbox" id="read" value="yes" name="read">
+                </p>
+            </div>
+
+            <button type="submit" form="form" id="addBtn">Add</button>
+        </form>
+    </div>
+
+    <div id="Library-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./index.js" charset="utf-8"></script>
+</body>
+</html>
